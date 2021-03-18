@@ -17,6 +17,8 @@ import random
 winner = ''
 player_choice = input('введи: камень, ножницы или бумага: ')
 choices = ['камень', 'ножницы', 'бумага']
+while player_choice != 'камень' and  player_choice != 'ножницы' and player_choice != 'бумага':
+    player_choice = input('введи: камень, ножницы или бумага: ')
 computer_choice = random.choice(choices) # знакомство с функцией random.choice
 if computer_choice == player_choice:
     winner = 'ничья!'
